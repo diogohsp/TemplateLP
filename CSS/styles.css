@@ -1,0 +1,199 @@
+/* ------------MOBILE FIRST----------- */
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* TEXTOS */
+
+.titulo{
+    font-size: 5vh;
+}
+
+/* CABECALHO (HEADER) */
+                                                           
+header{
+    height: 20vw ;
+    background-color: #e6b016;
+}
+
+.c-header__items{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 10vw 0vw 10vw;
+}
+
+.c-header__logo{
+    width: 30vw;
+}
+
+/* MENU HAMBURGER */
+
+.lista__items-menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:16vw;
+    right: 0%;
+    width: 100vw;
+    text-align: center;
+    padding: 3em 0 3em 0;
+
+    background-color: #e6b016;
+
+    row-gap: 3em;
+}
+
+.c-header__item-texto{
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+
+}
+
+.menu-linha{
+    background-color: white;
+    width: 5vh;
+    height: 1vh;
+    margin: 3px;
+}
+
+
+/* Container Main */
+
+main > section{  /*Seleciona todos os elementos filhos de main */
+    padding: 2vw;
+    max-width: 100vw;
+}
+
+img{
+    max-width: 100vw;
+}
+
+/* SECTION HOME (1° SECTION) */
+
+.c-home__items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+}
+
+/* SECTION COMO PARTICIPAR (2° SECTION) */
+
+.c-main__section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTION PATROCINADORES (3° SECTION) */
+
+.c-main__section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTION DUVIDAS-FREQUENTES (4° SECTION) */
+
+.c-main__section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTION GANHADORES(5° SECTION) */
+
+.c-main__section-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* RODAPE(FOOTER) */
+
+.container__rodape{
+    width: 100vw;
+    background-color: #e6b016;
+}
+
+.rodape__itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape_itens_texto{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    row-gap: 1em;
+}
+
+.rodape_bt{
+    text-decoration: none;
+    color: white;
+    font-size: 2.8vh;
+}
+
+.Regulamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    row-gap: 1em;
+}
+
+@media screen and (min-width: 1025px) {
+
+/* TEXTOS */
+
+.titulo{
+    font-size: 2.5vw;
+}
+
+/* CABECALHO(HEADER) */
+header{
+  display: flex;
+  justify-content: center;
+  height: 10vw;
+}
+
+.c-header__items {
+    padding: 0vw 2vw 0vw 2vw;
+    column-gap: 5vw;
+}
+
+.c-header__logo{
+    width: 12vw;
+}
+
+.lista__items-menu{
+    display: flex;
+    gap: 3vw;
+    position: relative;
+    flex-direction: row;
+    top: 0;
+    max-width: fit;
+    background-color: transparent;
+}
+
+.c-header__item-texto{
+    text-decoration: none;
+    font-size: 1.7vw;
+    color: white;
+    font-weight: 600;  
+}
+
+/* OCULTANDO MENU-HAMBURGER */
+
+.c-menu__botao{
+    display: none;
+}
+
+
+}

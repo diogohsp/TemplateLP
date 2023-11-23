@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="CSS/accordion.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO COM OPCOES E MENU HAMBURGER(HEADER) -->
+
+    <header class="container__header">
+        <div class="c-header__items">
+            <div class="logo">
+               <a href=""><img src="./imgs/logo.png" class="c-header__logo"></a> 
+            </div>
+
+            <nav class="container__menu">
+                <div class="c-menu__hamburger">
+                    <div id="botao_menu" class="c-menu__botao">
+                        <div class="menu-linha"></div>
+                        <div class="menu-linha"></div>
+                        <div class="menu-linha"></div>
+                    </div>   
+                    <ul class="lista__items-menu" id="menu">
+                        <li><a href="#home" class="c-header__item-texto">HOME</a></li>
+                        <li><a href="#section2" class="c-header__item-texto">COMO PARTICIPAR</a></li>
+                        <li><a href="#section3"  class="c-header__item-texto">PRÊMIOS</a></li>
+                        <li><a href="#faq"  class="c-header__item-texto">DÚVIDAS FREQUENTES</a></li>
+                        <li><a href="#ganhadores"  class="c-header__item-texto">GANHADORES</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- SECTIONS PRINCIPAIS DA LP -->
+
+    <main class="container__main">
+        <section class="c-main__home" id="home">
+            <div class="c-home__items">
+            <h2 class="titulo">HOME</h2>
+            <img src="./imgs/evento-7.png" alt="">
+
+            </div>
+        </section>
+
+        <section class="c-main__section-2" id="section2">
+            <h2 class="titulo">Como Participar</h2>
+            <img src="./imgs/evento-7.png" alt="">
+        </section>
+
+        <section class="c-main__section-3" id="section3">
+            <h2 class="titulo">Patrocinadores</h2>
+            <img src="./imgs/evento-7.png" alt="">
+        </section>
+
+        <section class="c-main__section-4" id="faq">
+            <h2 class="titulo">Duvidas Frequentes</h2>
+            
+        <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">Duvida?</div>
+              <div class="accordion-content">
+                <p class="texto__accordion" >Sim!</p>
+              </div>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="c-main__section-5" id="ganhadores">
+            <h2 class="titulo">Ganhadores</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-header">Ganhador</div>
+                  <div class="accordion-content">
+                    <p class="texto__accordion" >Sorteio ainda não realizado!</p>
+                  </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- RODAPE (FOOTER) -->
+
+    <footer class="container__rodape">
+        <div class="rodape__itens">
+            <div class="rodape_itens_texto">
+                <a href="#" class="rodape_bt">Home</a>
+                <a href="#ComoParticipar" class="rodape_bt">Como Participar</a>
+                <a href="#premios" class="rodape_bt">Prêmios</a>
+                <a href="#lojas-e-patrocinadores" class="rodape_bt">Lojas e patrocinadores</a>
+                <a href="#duvidas" class="rodape_bt">Dúvidas frequentes</a>
+                <a href="#ganhadores" class="rodape_bt">Ganhadores</a>
+            </div>
+            <div class="Regulamentos">
+                    <a href="https://aplicativo.sortedequemcompraaqui.com.br/regulamento" class="rodape_bt">Regulamento</a>
+                    <a href="./politicas-de-privacidade.html" class="rodape_bt">Politica de privacidade</a>
+                    <a href="./termos-de-uso.html" class="rodape_bt">Termos de uso</a>
+            </div>
+        </div>
+    </footer>
+
+   <script src="./JavaScript/accordion.js"></script>
+   <script src="./JavaScript/menu-hamburger.js" defer></script>
+</body>
+</html>
