@@ -10,6 +10,11 @@ html, body {
     font-size: 5vh;
 }
 
+.sre{
+    color: white;
+    font-size: 2vh;
+}
+
 /* CABECALHO (HEADER) */
                                                            
 header{
